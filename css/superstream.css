@@ -24,8 +24,8 @@ h1 {
   font-size: 64px;
 }
 
-h1 span {
-  display: inline;
+h1 > span {
+
 }
 
 h2 {
@@ -45,9 +45,66 @@ h2 {
   color: #F7BF0F;
 }
 
+a.action {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a.action:hover {
+  text-decoration: none;
+  color: #ccc;
+}
+
+/*----------*/
+
+.angled {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+}
+
+.angled:before,
+.angled:after {
+  content: '';
+  position: absolute; top: 0;
+  height: 100%;
+  background-image: url(../img/angle-black-left.png);
+  background-size: 100% 100%;
+}
+
+.angled:after {
+  background-image: url(../img/angle-black-right.png);
+}
+
+
+h1 .angled:before {
+  left: -20px; width: 20px;
+}
+h1 .angled:after {
+  right: -20px; width: 20px;
+}
+
+a.action.angled:before {
+  left: -8px; width: 8px;
+}
+
+a.action.angled:after {
+  right: -8px; width: 8px;
+}
+
+.angled.yellow:before { background-image: url(../img/angle-yellow-left.png) }
+.angled.yellow:after { background-image: url(../img/angle-yellow-right.png) }
+
+.angled.red:before { background-image: url(../img/angle-red-left.png) }
+.angled.red:after { background-image: url(../img/angle-red-right.png) }
+
+
 /* Tile 1
 ---------------------------------- */
-.tile1 {
+.t
+ile1 {
   background: #898E92;
   height: 732px;
 }
@@ -56,7 +113,7 @@ h2 {
   color: #898E92;
 }
 
-.tile1 h1 span {
+.tile1 h1 .angled {
   background: #F7BF0F;
 }
 
