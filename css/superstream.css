@@ -1,0 +1,150 @@
+/*
+Common colors from comps
+-----------------------------
+Dark Gray: #303030;
+Light Gray: #898E92;
+Red: #C92349;
+Yellow: #F7BF0F;
+Blue: #0389D1;
+
+*/
+
+body.superstream {
+  background: #303030;
+  color: #FFF;
+}
+
+h1, h2, h3, .next-tile-button {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h1 span {
+  display: inline;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+/* TEMP max width */
+.container-fluid { max-width: 1200px; }
+
+/* "Watch the live Stream" */
+.action {
+  background: #C92349;
+  color: #FFF;
+}
+
+.next-tile-button a {
+  color: #F7BF0F;
+}
+
+/* Tile 1
+---------------------------------- */
+.tile1 {
+  background: #898E92;
+  height: 732px;
+}
+
+.tile1 h1 {
+  color: #898E92;
+}
+
+.tile1 h1 span {
+  background: #F7BF0F;
+}
+
+.countdown {
+  /* Temp: */
+  border: 1px solid green;
+  padding: 30px;
+  min-height: 200px;
+}
+
+/* Tile 2
+---------------------------------- */
+.tile2 {
+}
+
+.tile2 h1 {
+  color: #898E92;
+}
+
+.tile2.top {
+  background: #F7BF0F;
+  height: 400px;
+}
+
+.tile2.bottom {
+  background: #C92349;
+  height: 290px;
+}
+
+
+/* Tile 3
+---------------------------------- */
+.tile3 {
+  background: #303030;
+  color: #C5c5C5; /* NEED TO GET FROM PSD */
+}
+
+.tile3 h1 {
+  color: #C92349;
+}
+
+.tile3.top {
+  height: 620px;
+}
+
+.tile3 p.subhead {
+  font-size: 22px;
+}
+
+.tile3 .row.instructions div {
+  margin-bottom: 32px;
+}
+
+.tile3 .instruction-icon {
+  float: left;
+  width: 40px;
+  height: 50px;
+  margin-right: 1em;
+}
+
+.tile3.bottom {
+  background: #0389D1;
+  height: 320px;
+}
+
+.tile3.bottom h3 {
+  text-align: center;
+}
+
+.tile3 .logos {
+  background: #000;
+}
+
+.tile3 .logos img {
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+
+.tile3 .half-logo-offset {
+  clear: both;
+  margin-left: 40px;
+}
+
+/* Footer
+---------------------------------- */
+
+footer {
+  padding: 24px 0;
+  font-size: 16px;
+}
