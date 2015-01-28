@@ -39,7 +39,7 @@ h2 {
   letter-spacing: 0.06em;
 }
 
-a {
+a, a:hover {
   color: #F7BF0F;
 }
 
@@ -73,16 +73,22 @@ a.action:hover {
 .next-tile-button { 
 }
 
-.next-tile-button  a {
+.next-tile-button {
   color: #F7BF0F;
 }
 
-.next-tile-button  a:hover {
+.next-tile-button:hover {
   text-decoration: none;
+  color: #fff;
 }
 
 .next-tile-button .glyphicon {
   position: relative; top: 5px;
+}
+
+.next-tile-button.action {
+  font-size: 25px;
+  background: transparent;
 }
 
 img.scale {
@@ -149,6 +155,16 @@ a.action.angled:after {
 
 .angled.red:before { background-image: url(../img/angle-red-left.png) }
 .angled.red:after { background-image: url(../img/angle-red-right.png) }
+
+
+.next-tile-button.angled { margin-left: -10px; }
+
+.next-tile-button.angled:before,
+.next-tile-button.angled:after { background-image: none; }
+
+.next-tile-button.angled:hover { color: #fff; background-color: #C92349; }
+.next-tile-button.angled:hover:before { background-image: url(../img/angle-red-left.png); }
+.next-tile-button.angled:hover:after { background-image: url(../img/angle-red-right.png); }
 
 
 /* Tile 1
@@ -349,6 +365,8 @@ a.action.angled:after {
   font-size: 20px;
   position: absolute; left: 0; bottom: 0;
 }
+
+.tile3 .next-tile-button .glyphicon { top: 2px; }
 
 /* Footer
 ---------------------------------- */
