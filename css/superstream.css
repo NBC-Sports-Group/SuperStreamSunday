@@ -138,13 +138,17 @@ a.action.angled:after {
 
 .countdown {
   /* Temp: */
-  border: 1px solid green;
-  padding: 30px;
+  /*border: 1px solid green;*/
+  padding: 24px;
   min-height: 200px;
 }
 
-.countdown .time-left {
+.countdown #time-left {
   font-size: 48px;
+}
+
+.countdown .countdown-expired {
+  display: none;
 }
 
 .countdown .social h3 {
