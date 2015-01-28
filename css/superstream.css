@@ -15,7 +15,6 @@ body.superstream {
   /*'Avenir Next LT W02SC Heavy It'*/
   /*font-family:'Avenir Next LT W02SC Demi', Times;*/
   font-family:'Avenir Next LT W02 Demi', Helvetica, Arial, sans-serif;
-
 }
 
 h1, h2, h3, .next-tile-button, a.action {
@@ -34,10 +33,16 @@ h1 > span {
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 32px;
+  font-style: normal;
+  line-height: 1.5em;
+  letter-spacing: 0.06em;
 }
 
-/* TEMP max width */
+a, a:hover {
+  color: #F7BF0F;
+}
+
 .container-fluid { max-width: 900px; }
 
 /* "Watch the live Stream" */
@@ -46,9 +51,7 @@ h2 {
   color: #FFF;
 }
 
-.next-tile-button a {
-  color: #F7BF0F;
-}
+
 
 a.action {
   padding: 10px;
@@ -59,6 +62,33 @@ a.action {
 
 a.action:hover {
   text-decoration: none;
+  color: #F7BF0F;
+}
+
+.next-tile-button {
+  font-size: 25px;
+  color: #313030;
+}
+
+.next-tile-button {
+}
+
+.next-tile-button {
+  color: #F7BF0F;
+}
+
+.next-tile-button:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.next-tile-button .glyphicon {
+  position: relative; top: 5px;
+}
+
+.next-tile-button.action {
+  font-size: 25px;
+  background: transparent;
 }
 
 img.scale {
@@ -70,6 +100,17 @@ img.scale {
 
 #back-button a {
   position: absolute; top:0; right: 0;
+}
+
+
+.app-store-group {
+  position: relative;
+  padding-left: 120px;
+  min-height: 100px;
+}
+
+.app-store-group .app-icon {
+  position: absolute; top: -60px; left: -60px;
 }
 
 /*----------*/
@@ -116,12 +157,22 @@ a.action.angled:after {
 .angled.red:after { background-image: url(../img/angle-red-right.png) }
 
 
+.next-tile-button.angled { margin-left: -10px; }
+
+.next-tile-button.angled:before,
+.next-tile-button.angled:after { background-image: none; }
+
+.next-tile-button.angled:hover { color: #fff; background-color: #C92349; }
+.next-tile-button.angled:hover:before { background-image: url(../img/angle-red-left.png); }
+.next-tile-button.angled:hover:after { background-image: url(../img/angle-red-right.png); }
+
+
 /* Tile 1
 ---------------------------------- */
 .tile1 {
   padding-top: 60px;
+  padding-bottom: 60px;
   box-sizing: border-box;
-  height: 732px;
 
   background: #313030;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJiMmEyYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzMTMwMzAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -154,7 +205,7 @@ a.action.angled:after {
 
 .countdown {
   /* Temp: */
-  /*border: 1px solid green;*/
+  /*border: 1px;*/
   padding: 24px;
   min-height: 200px;
 }
@@ -185,6 +236,7 @@ a.action.angled:after {
 /* Tile 2
 ---------------------------------- */
 .tile2 {
+  padding-bottom: 60px;
   background: #0089d1;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAxNjFiNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDg5ZDEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
   background: -moz-linear-gradient(top,  #0161b5 0%, #0089d1 100%);
@@ -200,12 +252,17 @@ a.action.angled:after {
 .tile2 h1 {
   margin-top: -22px;
   color: #313030;
-  font-size: 96px;
+  font-size: 112px;
+}
+
+.tile2 .app-row {
+  margin-top: 60px; margin-bottom: 70px;
 }
 
 /* Tile 3
 ---------------------------------- */
 .tile3 {
+  padding-bottom: 60px;
   color: #C5c5C5; /* NEED TO GET FROM PSD */
 
   background: #313030;
@@ -219,15 +276,16 @@ a.action.angled:after {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2a2a', endColorstr='#313030',GradientType=0 );
 }
 
-.tile3 h1 {
-  margin-top: -22px;
-  color: #0089d1;
-  text-align: right;
-  font-size: 96px;
+.tile3 .container-fluid {
+  position: relative;
 }
 
-.tile3.top {
-  height: 620px;
+.tile3 h1 {
+  margin-top: -22px;
+  margin-right: 15px;
+  color: #0089d1;
+  text-align: right;
+  font-size: 112px;
 }
 
 .tile3 .note {
@@ -239,8 +297,16 @@ a.action.angled:after {
   font-size: 22px;
 }
 
+#devices-mobile {
+  min-height: 150px;
+  position: relative;
+}
+
+#devices-mobile img {
+  position: absolute; top: -230px; left: -152px;
+}
+
 .tile3 .row.instructions div {
-  margin-bottom: 32px;
 }
 
 .tile3 .list-icon {
@@ -257,6 +323,13 @@ a.action.angled:after {
   font-weight: bold;
   font-size: 16px;
 }
+
+.tile3 .instructions ul,
+.tile3 .instructions li:last-of-type,
+.tile3 .instructions li:last-of-type p {
+  margin-bottom: 0;
+}
+
 
 .tile3 .instructions li .list-icon {
   position: absolute; top: 0; left: 0;
@@ -287,6 +360,13 @@ a.action.angled:after {
   clear: both;
   margin-left: 40px;
 }
+
+.tile3 .next-tile-button {
+  font-size: 20px;
+  position: absolute; left: 0; bottom: 0;
+}
+
+.tile3 .next-tile-button .glyphicon { top: 2px; }
 
 /* Footer
 ---------------------------------- */
