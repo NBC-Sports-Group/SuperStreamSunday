@@ -29,7 +29,7 @@
             <div class="sunday angled yellow">
               Sunday
             </div>
-            
+
           </h1>
         </div>
         <div class="col-sm-4">
@@ -37,7 +37,7 @@
 
           <div class="countdown">
             <h3>Lorem Ipsum Dolor Sit Amet</h3>
-            <div class="time-left"><span>6h 45m 12s</span></div>
+            <div id="time-left"><span id="countdown-text">&nbsp;</span></div>
             <div class="social">
               <h3>Tell Your Friends</h3>
               <a href="#"><img src="images/share_facebook.jpg" /></a>
@@ -179,8 +179,50 @@
     </div>
   </footer>
 
+  <!-- Scripts -->
+  <!-- =============================================================== -->
   <script src="js/jquery-1.11.2.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/countdown.min.js"></script>
+
+  <!-- Countdown -->
+  <script>
+    var countdownElement = document.getElementById("countdown-text");
+    var targetDate = new Date(Date.UTC(2015, 1, 2, 4, 30)); /* PRODUCTION DATE */
+    // var targetDate = new Date(Date.UTC(2015, 0, 28, 17, 28));
+    var countdownInterval = setInterval(secondTick, 1000);
+    var now = new Date();
+
+    function secondTick() {
+      now = new Date();
+
+      // If target date is in past, hide the countdown.
+      // Else update the display
+      if (targetDate.getTime() < now.getTime()) {
+        hideCountdown();
+      } else {
+        countdownElement.innerHTML = formatCountdownString(countdown(targetDate));
+      }
+    }
+
+    function formatCountdownString(countdownResult) {
+      if (countdownResult) {
+        return (countdownResult.hours + "h " + countdownResult.minutes + "m " + countdownResult.seconds + "s");
+      } else {
+        return "--h --m --s";
+      }
+    }
+
+    function hideCountdown() {
+      clearInterval(countdownInterval);
+      document.getElementById('time-left').className = "countdown-expired";
+    }
+
+    // Do a tick manually to update/refresh things
+    secondTick();
+  </script>
+
+  <!-- Omniture -->
   <script src="js/tracking/VisitorAPI.js"></script>
   <script src="js/tracking/AppMeasurement.js"></script>
   <script>
