@@ -43,6 +43,13 @@ a, a:hover {
   color: #F7BF0F;
 }
 
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
 .container-fluid { max-width: 900px; }
 
 /* "Watch the live Stream" */
@@ -85,6 +92,9 @@ a.action:hover {
 .next-tile-button .glyphicon {
   position: relative; top: 5px;
 }
+.next-tile-button:hover .glyphicon {
+  color: #F7BF0F;
+}
 
 .next-tile-button.action {
   font-size: 25px;
@@ -112,6 +122,11 @@ img.scale {
 
 .app-store-group .app-icon {
   position: absolute; top: -60px; left: -60px;
+}
+
+.app-store-group .stores a { 
+  margin-bottom: 5px; 
+  display: inline-block;
 }
 
 /*----------*/
@@ -156,16 +171,6 @@ a.action.angled:after {
 
 .angled.red:before { background-image: url(../img/angle-red-left.png) }
 .angled.red:after { background-image: url(../img/angle-red-right.png) }
-
-
-.next-tile-button.angled { margin-left: -10px; }
-
-.next-tile-button.angled:before,
-.next-tile-button.angled:after { background-image: none; }
-
-.next-tile-button.angled:hover { color: #fff; background-color: #C92349; }
-.next-tile-button.angled:hover:before { background-image: url(../img/angle-red-left.png); }
-.next-tile-button.angled:hover:after { background-image: url(../img/angle-red-right.png); }
 
 
 /* Tile 1
@@ -276,7 +281,7 @@ a.action.angled:after {
 }
 
 .tile2 h1 {
-  margin-top: -22px;
+  margin-top: -23px;
   color: #313030;
   font-size: 112px;
 }
@@ -340,6 +345,10 @@ a.action.angled:after {
 
 }
 
+.tile3 .instructions ul {
+  margin-top: 20px;
+}
+
 .tile3 .instructions li {
   padding-left: 70px;
   margin-bottom: 20px;
@@ -390,7 +399,7 @@ a.action.angled:after {
 
 .tile3 .next-tile-button {
   font-size: 20px;
-  position: absolute; left: 0; bottom: 0;
+  position: absolute; left: 15px; bottom: 0;
 }
 
 .tile3 .next-tile-button .glyphicon { top: 2px; }
@@ -410,9 +419,54 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+
+    h1 {
+      line-height: 1em;
+    }
+    h2 { font-size: 24px; }
     .mobile-br {
       display: block;
     }
+
+    .tile2,
+    .tile3 {
+      padding-bottom: 20px;
+    }
+
+    .tile2 h1,
+    .tile3 h1 {
+      font-size: 60px;
+    }
+
+    .tile2 h1,
+    .tile3 h1 {
+      margin-top: -10px;
+    }
+
+    .tile3 .next-tile-button {
+      position: relative; left: 20px; bottom: auto;
+    }
+
+    .instructions ul {
+      margin-top: 15px;
+    }
+
+    #devices-mobile {
+      min-height: none;
+      position: relative;
+    }
+
+    #devices-mobile img {
+      position: relative; top: auto; left: auto;
+      width: 100%;
+    }
+
+    /* BOOTSTRAP OVERRIDE */
+
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+      padding-left: 30px; padding-right: 30px;
+    }
+
 
 }
 
@@ -436,4 +490,19 @@ footer {
     .tile1 h1.cf:after {
         clear: both;
     }
+
+
+    .tile2 .app-row {
+      margin-top: 30px; margin-bottom: 30px;
+    }
+
+    .app-store-group {
+      margin-bottom: 10px;
+    }
+
+    .app-store-group:last-of-type {
+      margin-bottom: 0;
+    }
+
+
 }
