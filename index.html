@@ -33,7 +33,7 @@
           </h1>
         </div>
         <div class="col-sm-4">
-          <a href="#" class="action angled red">Watch the live stream</a>
+          <a href="#" class="action angled red">Back the live stream <i class='glyphicon glyphicon-chevron-right'></i></a>
 
           <div class="countdown">
             <h3>Lorem Ipsum Dolor Sit Amet</h3>
@@ -181,7 +181,18 @@
 
   <script src="js/jquery-1.11.2.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/tracking/VisitorAPI.js"></script>
+  <script src="js/tracking/AppMeasurement.js"></script>
   <script>
+
+    s.pageName="NBC Super Stream Sunday";
+    s.server="";
+    s.channel="";
+    s.pageType="";
+    var s_code=s.t();if(s_code)document.write(s_code);
+
+
+
     $(function(){
       $('a.share.twitter').click(function(e){
         e.preventDefault();
