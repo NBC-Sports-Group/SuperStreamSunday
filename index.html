@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- NOTE!!! THIS NEEDS REMOVED WHEN DEPLOYED FOR LIVE PRODUCTION!!!! -->
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <meta name="robots" content="noindex">
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +15,7 @@
     <meta property="og:site_name" content="NBC Super Stream Sunday">
     <meta property="og:title" content="NBC Super Stream Sunday" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://6qo1.t.proxylocal.com/" />
+    <meta property="og:url" content="https://s3.amazonaws.com/isobardev/index.html" />
     <meta property="og:description" content="FB Description share copy goes here">
     <meta property="og:image" content="http://www.big13.net/NBC%20Peacock/Peacock_Cleanup.JPG" />
     <meta property="og:image:width" content="644">
@@ -22,7 +27,7 @@
     <meta name="twitter:title" content="My picture" />
     <meta name="twitter:description" content="A superbowl worthy description" />
     <meta name="twitter:image" content="http://www.big13.net/NBC%20Peacock/Peacock_Cleanup.JPG" />
-    <meta name="twitter:url" content="http://6qo1.t.proxylocal.com/" />
+    <meta name="twitter:url" content="https://s3.amazonaws.com/isobardev/index.html" />
 
     <!-- Schema.org markup for Google+ -->
     <meta itemprop="name" content="NBC Super Stream Sunday">
@@ -73,9 +78,9 @@
             <div id="time-left"><span id="countdown-text">&nbsp;</span></div>
             <div class="social">
               <h3>Tell Your Friends</h3>
-              <a href="https://www.facebook.com/sharer/sharer.php?u=http://6qo1.t.proxylocal.com" title="Share on Facebook" class="share facebook"><img src="images/icon_fb.png" /></a>
-              <a href="http://6qo1.t.proxylocal.com/" title="View the Super Bowl " class="share twitter"><img src="images/icon_tw.png" /></a>
-              <a href="https://plus.google.com/share?url=http://6qo1.t.proxylocal.com" title="Share on Google+" class="share google"><img src="images/icon_gp.png" /></a>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https://s3.amazonaws.com/isobardev/index.html" title="Share on Facebook" class="share facebook"><img src="images/icon_fb.png" /></a>
+              <a href="https://s3.amazonaws.com/isobardev/index.html" title="View the Super Bowl " class="share twitter"><img src="images/icon_tw.png" /></a>
+              <a href="https://plus.google.com/share?url=https://s3.amazonaws.com/isobardev/index.html" title="Share on Google+" class="share google"><img src="images/icon_gp.png" /></a>
             </div>
           </div>
         </div>
@@ -86,7 +91,8 @@
         </div>
         <div class="col-sm-6">
           <h2>Today, it’s all about the Big Game. But you can watch full episodes and live TV any time.</h2>
-          <a class="next-tile-button" href="#tile2"><i class='glyphicon glyphicon-chevron-down'></i> Find Out How</a>
+          <a class="next-tile-button" href="#tile2"><i class='glyphicon glyphicon-chevron-down'></i> Here's how to keep watching</a>
+
         </div>
         <div class="col-sm-6">
           <div id="devices" class="hidden-sm hidden-xs">
@@ -205,7 +211,7 @@
       </div> <!-- /row-->
 
       <div class="row">
-        <div class="col-sm-9 col-sm-offset-2 logos">
+        <div class="col-sm-10 col-sm-offset-2 logos">
           <a href="#" title="bravo"><img src="images/logo_bravo.png"/></a>
           <a href="#" title="cnbc"><img src="images/logo_cnbc.png"/></a>
           <a href="#" title="e-now"><img src="images/logo_e-now.png"/></a>
@@ -213,6 +219,7 @@
           <a href="#" title="golf"><img src="images/logo_golf.png"/></a>
           <a href="#" title="msnbc"><img src="images/logo_msnbc.png"/></a>
           <a href="#" title="nbc"><img src="images/logo_nbc.png"/></a>
+          <div class="logo-row-spacer"></div>
           <!-- Second Row -->
           <a href="#" title="nbcsports"><img src="images/logo_nbcsports.png" class="half-logo-offset"/></a>
           <a href="#" title="oxygen"><img src="images/logo_oxygen.png"/></a>
@@ -242,7 +249,7 @@
   <script src="js/jquery-1.11.2.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/countdown.min.js"></script>
-  <script type="text/javascript" src="http://fast.fonts.net/jsapi/65ee4e27-1743-48df-a4e4-78147ab55bc5.js"></script>
+  <script type="text/javascript" src="//fast.fonts.net/jsapi/65ee4e27-1743-48df-a4e4-78147ab55bc5.js"></script>
 
   <!-- Countdown -->
   <script>
