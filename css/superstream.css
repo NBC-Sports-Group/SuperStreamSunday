@@ -96,6 +96,7 @@ img.scale {
 }
 
 #back-button {
+  line-height: 1em;
 }
 
 #back-button a {
@@ -202,6 +203,12 @@ a.action.angled:after {
   font-size: 112px;
   margin-left: 200px;
 }
+
+.tile1 .container-fluid {
+  position: relative;
+}
+
+
 
 .countdown {
   /* Temp: */
@@ -374,4 +381,16 @@ a.action.angled:after {
 footer {
   padding: 24px 0;
   font-size: 16px;
+}
+
+@media screen and (max-width: 1000px) {
+  h1 { font-size: 62px; }
+  .tile1 h1 { left: 0; font-size: 62px; }
+  .tile1 h1 .sunday { font-size: 82px; }
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-br {
+      display: block;
+    }
 }
