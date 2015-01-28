@@ -22,6 +22,7 @@
   <!-- Tile 1 -->
   <div class="tile1">
     <div class="container-fluid">
+      <a href="#" class="action angled red">Back the live stream <i class='glyphicon glyphicon-chevron-right'></i></a>
       <div class="row">
         <div class="col-sm-8">
           <h1>
@@ -33,8 +34,6 @@
           </h1>
         </div>
         <div class="col-sm-4">
-          <a href="#" class="action angled red">Back the live stream <i class='glyphicon glyphicon-chevron-right'></i></a>
-
           <div class="countdown">
             <h3>Lorem Ipsum Dolor Sit Amet</h3>
             <div class="time-left"><span>6h 45m 12s</span></div>
@@ -54,7 +53,9 @@
           <div class="next-tile-button"><a href="#tile2"><span class="caret"></span><span>Find Out How</span></a></div>
         </div>
         <div class="col-sm-6">
-          [Mobile device here]
+          <div id="devices">
+            <img src="img/devices.png" class="scale" />
+          </div>
         </div>
       </div>
     </div><!-- /container-fluid -->
@@ -62,7 +63,7 @@
 
   <!-- Tile 2 -->
   <a name="tile2"></a>
-  <div class="tile2 top">
+  <div class="tile2">
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12">
@@ -70,11 +71,6 @@
           <h2 class="col-sm-8">Enjoy your favorite shows and sporting events on the NBC and NBC Sports Live Extra apps, free with your TV Provider log in.</h2>
         </div>
       </div> <!-- /row -->
-    </div><!-- /container-fluid -->
-  </div><!-- /tile2 top -->
-
-  <div class="tile2 bottom">
-    <div class="container-fluid">
       <div class="row bottom">
         <div class="col-sm-5">
           <h3><span>Get NBC</span><br/><span>Without the TV</span></h3>
@@ -103,7 +99,9 @@
 
           <div class="row">
             <div class="col-sm-4">
-              FPO images here
+              <div id="devices-mobile">
+                <img src="img/devices-mobile.png" class="scale" />
+              </div>
               <p class="note">NOTE: If you don’t have an online account with your TV provider or can’t remember your username and password, please contact your TV provider directly to learn more.</p>
             </div>
             <div class="col-sm-8">
@@ -111,16 +109,20 @@
 
               <div class="row instructions">
                 <div class="col-sm-12">
-                  <img class="instruction-icon" />
-                  <p>Select the programming that you’d like to watch via NBC and NBC Sports websites or mobile apps</p>
-                </div>
-                <div class="col-sm-12">
-                  <img class="instruction-icon" />
-                  <p>When prompted, sign-in using the username and password from your TV provider (Hint: it is usually the same password you use to access your TV provider’s website)</p>
-                </div>
-                <div class="col-sm-12">
-                  <img class="instruction-icon" />
-                  <p>Start watching immediately.</p>
+                    <ul class="list-unstyled">
+                      <li>
+                        <img src="img/icon-provider.png" class="list-icon" />
+                        <p>SELECT YOUR PROVIDER: Select the programming that you’d like to watch via NBC and NBC Sports websites or mobile apps.</p>
+                      </li>
+                      <li>
+                        <img src="img/icon-signin.png" class="list-icon" />
+                        <p>SIGN IN: Enter your username and password to your TV provide account.  The same you use to pay your bill online. Call your provider or go online to setup a username and password. <a href="#">Find out more</a></p>
+                      </li>
+                      <li>
+                        <img src="img/icon-video.png" class="list-icon" />
+                        <p>START WATCHING: Browse our catalog for full episodes, behind-the-scene looks, interviews and more, Start watching immediately.</p>
+                      </li>
+                    </ul>
                 </div>
                 <div class="col-sm-12">
                   <a href="#">Learn More<span class="caret"></span></a>
