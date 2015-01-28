@@ -1,11 +1,8 @@
 
 var visitor = new Visitor("A8AB776A5245B4220A490D44@AdobeOrg");
-visitor.trackingServer = "oimg.nbcuni.com"; // same
-Configure the Visitor ID
-service.
-as s.trackingServer
-visitor.trackingServerSecure ="osimg.nbcuni.com"; //same as
-s.trackingServerSecure
+visitor.trackingServer = "oimg.nbcuni.com"; 
+// same Configure the Visitor ID service. as s.trackingServer
+visitor.trackingServerSecure ="osimg.nbcuni.com"; //same as s.trackingServerSecure
 /*
  ============== DO NOT ALTER ANYTHING BELOW THIS LINE ! ============
 
