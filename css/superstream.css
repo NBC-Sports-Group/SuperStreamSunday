@@ -12,16 +12,17 @@ Blue: #0389D1;
 body.superstream {
   background: #303030;
   color: #FFF;
-
+  /*'Avenir Next LT W02SC Heavy It'*/
   /*font-family:'Avenir Next LT W02SC Demi', Times;*/
-  /*font-family:'Avenir Next LT W02SC Heavy It';*/
-  font-family:'Avenir Next LT W02SC Bold Cond';
+  font-family:'Avenir Next LT W02SC Demi', Helvetica, Arial, sans-serif;
+  
 }
 
-h1, h2, h3, .next-tile-button {
+h1, h2, h3, .next-tile-button, a.action {
   text-transform: uppercase;
   font-weight: bold;
   font-style: italic;
+  font-family:'Avenir Next LT W02SC Bold Cond';
 }
 
 h1 {
@@ -37,7 +38,7 @@ h2 {
 }
 
 /* TEMP max width */
-.container-fluid { max-width: 1200px; }
+.container-fluid { max-width: 900px; }
 
 /* "Watch the live Stream" */
 .action {
@@ -51,7 +52,7 @@ h2 {
 
 a.action {
   padding: 10px;
-  font-size: 14px;
+  font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -62,6 +63,13 @@ a.action:hover {
 
 img.scale {
   width: 100%;
+}
+
+#back-button {
+}
+
+#back-button a {
+  position: absolute; top:0; right: 0;
 }
 
 /*----------*/
@@ -79,12 +87,12 @@ img.scale {
   height: 100%;
   background-image: url(../img/angle-black-left.png);
   background-size: 100% 100%;
+  z-index: -1;
 }
 
 .angled:after {
   background-image: url(../img/angle-black-right.png);
 }
-
 
 h1 .angled:before {
   left: -20px; width: 20px;
@@ -129,15 +137,19 @@ a.action.angled:after {
 
 .tile1 h1 {
   color: #313030;
+  font-size: 82px;
+  position: relative;
+  left: -60px;
 }
 
 .tile1 h1 .angled {
   background: #F7BF0F;
+  padding-right: 10px;
 }
 
 .tile1 .sunday {
-  font-size: 76px;
-  margin-left: 128px;
+  font-size: 112px;
+  margin-left: 200px;
 }
 
 .countdown {
