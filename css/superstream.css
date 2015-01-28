@@ -21,7 +21,7 @@ h1, h2, h3, .next-tile-button, a.action {
   text-transform: uppercase;
   font-weight: bold;
   font-style: italic;
-  font-family:'AvenirNextLTW02-BoldCn';
+  font-family:'AvenirNextLTW02-BoldCn', Helvetica, Arial, sans-serif;;
 }
 
 h1 {
@@ -204,34 +204,52 @@ a.action.angled:after {
 }
 
 .countdown {
-  /* Temp: */
-  /*border: 1px;*/
-  padding: 24px;
+  padding: 0px;
   min-height: 200px;
+  text-align: right;
+}
+
+.countdown h3 {
+  font-size: 20px;
 }
 
 .countdown #time-left {
   font-size: 48px;
+  letter-spacing: -1px;
+  font-family: 'AvenirNextLTW02-HeavyCn_724425', Helvetica, Arial, sans-serif;
 }
 
 .countdown .countdown-expired {
   display: none;
 }
 
+.countdown .social {
+  float: right;
+}
+
 .countdown .social h3 {
   display: inline-block;
+  text-align: left;
   float: left;
   font-size: 16px;
-  max-width: 90px;
-  margin: 5px 0;
+  max-width: 80px;
+  margin: 5px 0 0 0;
+  color: #9f9f9f;
 }
 
 .countdown .social img {
   float: left;
-  margin-left: 2px;
+  margin-left: 12px;
   width: 40px;
   height: 48px;
 }
+
+.countdown .social .twitter img {
+  margin-left: 2px;
+  margin-right: 0px;
+}
+
+
 
 /* Tile 2
 ---------------------------------- */
@@ -344,15 +362,16 @@ a.action.angled:after {
 
 .tile3.bottom h3 {
   text-align: center;
+  color: #FFF;
 }
 
 .tile3 .logos {
-  background: #404; /* Temp for debugging centering */
+  margin-top: 32px;
 }
 
 .tile3 .logos img {
-  width: 80px;
-  height: 80px;
+  width: 84px;
+  height: 74px;
   float: left;
 }
 
