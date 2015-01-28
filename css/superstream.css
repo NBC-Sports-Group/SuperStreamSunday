@@ -388,6 +388,11 @@ a.action.angled:after {
   margin-left: 40px;
 }
 
+.logo-row-spacer {
+  clear: both;
+  height: 36px;
+}
+
 .tile3 .next-tile-button {
   font-size: 20px;
   position: absolute; left: 0; bottom: 0;
