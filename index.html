@@ -4,16 +4,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Facebook meta/opengraph data -->
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="NBC Super Stream Sunday">
-    <meta property="og:type" content="web" />
-    <meta property="og:url" content="http://fixme.com" />
     <meta property="og:title" content="NBC Super Stream Sunday" />
-    <meta property="og:description" content="......">
-    <meta property="og:image" content="https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xap1/t39.2178-6/851565_496755187057665_544240989_n.jpg" />
-    <meta property="og:image:width" content="500">
-    <meta property="og:image:height" content="332">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://6qo1.t.proxylocal.com/" />
+    <meta property="og:description" content="FB Description share copy goes here">
+    <meta property="og:image" content="http://www.big13.net/NBC%20Peacock/Peacock_Cleanup.JPG" />
+    <meta property="og:image:width" content="644">
+    <meta property="og:image:height" content="484">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@nbc" />
+    <meta name="twitter:title" content="My picture" />
+    <meta name="twitter:description" content="A superbowl worthy description" />
+    <meta name="twitter:image" content="http://www.big13.net/NBC%20Peacock/Peacock_Cleanup.JPG" />
+    <meta name="twitter:url" content="http://6qo1.t.proxylocal.com/" />
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="NBC Super Stream Sunday">
+    <meta name="description" itemprop="description" content="Page description. No longer than 155 characters." />
+    <meta itemprop="image" content="http://www.big13.net/NBC%20Peacock/Peacock_Cleanup.JPG">
 
     <title>NBC Super Stream Sunday</title>
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -51,10 +65,9 @@
             <div id="time-left"><span id="countdown-text">&nbsp;</span></div>
             <div class="social">
               <h3>Tell Your Friends</h3>
-              <a href="#"><img src="images/share_facebook.jpg" /></a>
-              <a href="#"><img src="images/share_twitter.jpg" /></a>
-              <a href="http://demo.nbc.com" title="View the Super Bowl Live" class="share twitter">Tweet Me</a>
-              <a href="#"><img src="images/share_google.jpg" /></a>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=http://6qo1.t.proxylocal.com" title="Share on Facebook" class="share facebook"><img src="images/share_facebook.jpg" /></a>
+              <a href="http://6qo1.t.proxylocal.com/" title="View the Super Bowl " class="share twitter"><img src="images/share_twitter.jpg" /></a>
+              <a href="https://plus.google.com/share?url=http://6qo1.t.proxylocal.com" title="Share on Google+" class="share google"><img src="images/share_google.jpg" /></a>
             </div>
           </div>
         </div>
@@ -255,7 +268,25 @@
         e.preventDefault();
         var loc = $(this).attr('href');
         var title  = encodeURIComponent($(this).attr('title'));
-        window.open('http://twitter.com/share?url=' + loc + '&text=' + title + '&', 'twitterwindow', 'height=450, width=550, top='+($(window).height()/2 - 225) +', left='+$(window).width()/2 +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+        window.open('http://twitter.com/share?url=' + loc + '&text=' + title + '&', 'twitterDialog', 'height=252, width=550, top='+($(window).height()/2 - 225) +', left='+$(window).width()/2 +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+        return false;
+      })
+    });
+
+    $(function(){
+      $('a.share.facebook').click(function(e){
+        e.preventDefault();
+        var loc = $(this).attr('href');
+        window.open(loc, 'facebookDialog', 'height=500, width=550, top='+($(window).height()/2 - 225) +', left='+$(window).width()/2 +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+        return false;
+      })
+    });
+
+    $(function(){
+      $('a.share.google').click(function(e){
+        e.preventDefault();
+        var loc = $(this).attr('href');
+        window.open(loc, 'googleDialog', 'height=550, width=506, top='+($(window).height()/2 - 225) +', left='+$(window).width()/2 +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
         return false;
       })
     });
