@@ -240,6 +240,9 @@ a.action.angled:after {
   height: 48px;
 }
 
+#devices { position: relative; }
+#devices img { position: absolute; top: -43px; left: -110px; }
+
 /* Tile 2
 ---------------------------------- */
 .tile2 {
@@ -392,5 +395,28 @@ footer {
 @media screen and (max-width: 768px) {
     .mobile-br {
       display: block;
+    }
+
+}
+
+
+@media screen and (max-width: 680px) {
+    .tile1 h1 {
+      text-align: center;
+    }
+
+    .tile1 h1 .sunday {
+      margin: auto;
+      float: right;
+    }
+
+    .tile1 h1.cf:before,
+    .tile1 h1.cf:after {
+        content: " ";
+        display: table;
+    }
+
+    .tile1 h1.cf:after {
+        clear: both;
     }
 }
