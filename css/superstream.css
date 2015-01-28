@@ -14,15 +14,15 @@ body.superstream {
   color: #FFF;
   /*'Avenir Next LT W02SC Heavy It'*/
   /*font-family:'Avenir Next LT W02SC Demi', Times;*/
-  font-family:'Avenir Next LT W02SC Demi', Helvetica, Arial, sans-serif;
-  
+  font-family:'Avenir Next LT W02 Demi', Helvetica, Arial, sans-serif;
+
 }
 
 h1, h2, h3, .next-tile-button, a.action {
   text-transform: uppercase;
   font-weight: bold;
   font-style: italic;
-  font-family:'Avenir Next LT W02SC Bold Cond';
+  font-family:'AvenirNextLTW02-BoldCn';
 }
 
 h1 {
