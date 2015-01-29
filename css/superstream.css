@@ -41,8 +41,10 @@ h3 {
   font-family: 'AvenirNextLTW02-HeavyCn_724425', Helvetica, Arial, sans-serif;
 }
 
-a, a:hover {
+a, a:hover, a:active, a:focus {
+  outline: none;
   color: #F7BF0F;
+  text-decoration: none;
 }
 
 a:hover {
@@ -82,10 +84,11 @@ a.action:hover {
   margin-left: 5px;
 }
 
-.next-tile-button {
+.next-tile-button, .next-tile-button:active {
   font-size: 28px;
   font-style: italic;
   color: #F7BF0F;
+  text-decoration: none;
 }
 
 .next-tile-button:hover {
