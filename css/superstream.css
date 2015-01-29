@@ -387,11 +387,14 @@ a.action.angled:after {
 .tile3.bottom h3 {
   text-align: center;
   color: #FFF;
+  margin-top: 36px;
+  margin-bottom: 16px;
+  font-size: 24px;
 }
 
 .tile3 .logos {
   margin-top: 32px;
-  margin-bottom: 30px;
+  margin-bottom: 64px;
 }
 
 .tile3 .logos img {
