@@ -227,6 +227,7 @@ a.action.angled:after {
 
 .countdown h3 {
   margin-bottom: 0;
+  color: #c1c2c3;
 }
 
 .countdown #time-left {
@@ -250,7 +251,7 @@ a.action.angled:after {
   font-size: 16px;
   max-width: 80px;
   margin: 5px 0 0 0;
-  color: #9f9f9f;
+  color: #c1c2c3;
 }
 
 .countdown .social img {
