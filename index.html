@@ -66,6 +66,11 @@
             <div id="time-left"><span id="countdown-text">&nbsp;</span></div>
             <div class="social">
               <h3>Tell Your Friends</h3>
+              <div class="hidden-md hidden-lg">
+                <button class="share facebook" data-href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsuperstreamsunday.com" data-title="Share on Facebook"></button>
+                <button class="share twitter" data-href="http://bit.ly/1A05ted" data-title="NBC Super Stream Sunday brings 11 hours of Superbowl & The Blacklist live streaming. TV dreams come true."></button>
+                <button class="share google" data-href="https://plus.google.com/share?url=http%3A%2F%2Fsuperstreamsunday.com" data-title="Share on Google+"></button>
+              </div>
               <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsuperstreamsunday.com" title="Share on Facebook" class="share facebook"></a>
               <a href="http://bit.ly/1A05ted" title="NBC Super Stream Sunday brings 11 hours of Superbowl & The Blacklist live streaming. TV dreams come true." class="share twitter"></a>
               <a href="https://plus.google.com/share?url=http%3A%2F%2Fsuperstreamsunday.com" title="Share on Google+" class="share google"></a>
@@ -159,7 +164,7 @@
               <div id="devices-mobile">
                 <img src="img/devices-mobile.png" />
               </div>
-              <p class="note hidden-xs hidden-sm">NOTE: If you don’t have an online account with your TV provider or can’t remember your username and password, please contact your TV provider directly to learn more.</p>
+              <p class="note hidden-xs">NOTE: If you don’t have an online account with your TV provider or can’t remember your username and password, please contact your TV provider directly to learn more.</p>
             </div>
             <div class="col-sm-7 col-sm-offset-1">
               <p class="subhead">Super Stream Sunday can’t go on forever, but it’s easy to ensure your favorite NBC content is always at your disposal. Accessing your shows is a cinch with your existing TV subscription. Here’s the gist:</p>
@@ -181,7 +186,7 @@
                       </li>
                     </ul>
 
-                    <p class="note hidden-md hidden-lg">NOTE: If you don’t have an online account with your TV provider or can’t remember your username and password, please contact your TV provider directly to learn more.</p>
+                    <p class="note hidden-sm hidden-md hidden-lg">NOTE: If you don’t have an online account with your TV provider or can’t remember your username and password, please contact your TV provider directly to learn more.</p>
 
                 </div>
               </div> <!-- /row (instructions) -->
@@ -305,9 +310,9 @@
 
 
     $(function(){
-      $('a.share.twitter').click(function(e){
+      $('.share.twitter').click(function(e){
         e.preventDefault();
-        var loc = $(this).attr('href');
+        var loc = $(this).attr('href') || $(this).attr('data-href');
         var title  = encodeURIComponent($(this).attr('title'));
         window.open('http://twitter.com/share?url=' + loc + '&text=' + title + '&', 'twitterDialog', 'height=252, width=550, top='+($(window).height()/2 - 225) +', left='+$(window).width()/2 +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
         return false;
@@ -315,18 +320,18 @@
     });
 
     $(function(){
-      $('a.share.facebook').click(function(e){
+      $('.share.facebook').click(function(e){
         e.preventDefault();
-        var loc = $(this).attr('href');
+        var loc = $(this).attr('href') || $(this).attr('data-href');
         window.open(loc, 'facebookDialog', 'height=500, width=550, top='+($(window).height()/2 - 225) +', left='+$(window).width()/2 +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
         return false;
       })
     });
 
     $(function(){
-      $('a.share.google').click(function(e){
+      $('.share.google').click(function(e){
         e.preventDefault();
-        var loc = $(this).attr('href');
+        var loc = $(this).attr('href') || $(this).attr('data-href');
         window.open(loc, 'googleDialog', 'height=768, width=506, top='+($(window).height()/2 - 225) +', left='+$(window).width()/2 +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
         return false;
       })

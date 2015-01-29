@@ -321,6 +321,28 @@ a.action.angled:after {
   background-image: url('../img/social-google.png');
 }
 
+.countdown .social button.facebook {
+ 
+  width: 17px; height: 32px;
+}
+
+.countdown .social button.twitter {
+  width:31px; height: 25px;
+  margin-top: 12px;
+}
+
+.countdown .social button.google {
+  width: 31px;
+  height: 31px;
+  margin-right: 0;
+}
+
+.social button.share {
+  border: 0; 
+  background-color: transparent;
+  background-size: 100% 100%;
+}
+
 #devices { position: relative; }
 #devices img { position: absolute; top: -43px; left: -110px; }
 
@@ -509,7 +531,7 @@ footer a:hover {
 
 @media screen and (max-width: 768px) {
   body { color: orange; }
-  .container-fluid { overflow-x: hidden; }
+  /*.container-fluid { overflow-x: hidden; }*/
   #back-button {
     overflow: initial !important;
   }
@@ -521,6 +543,11 @@ footer a:hover {
   .tile1 .row1 .col-sm-8,
   .tile1 .row1 .col-sm-4 {
     width: 50%;
+  }
+
+  .tile2 h1, .tile3 h1 {
+    font-size: 100px;
+    line-height: 80px;
   }
 
   .tile3 .logos img {
