@@ -192,28 +192,9 @@ a.action.angled:after {
 
 }
 
-.tile1 h1 {
-  color: #313030;
-  font-size: 82px;
-  position: relative;
-  left: -60px;
-}
-
-.tile1 h1 .angled {
-  background: #F7BF0F;
-  padding-right: 10px;
-}
-
-.tile1 .sunday {
-  font-size: 112px;
-  margin-left: 200px;
-}
-
 .tile1 .container-fluid {
   position: relative;
 }
-
-
 
 .countdown {
   padding: 0px;
@@ -477,24 +458,6 @@ footer {
 
 
 @media screen and (max-width: 680px) {
-    .tile1 h1 {
-      text-align: center;
-    }
-
-    .tile1 h1 .sunday {
-      margin: auto;
-      float: right;
-    }
-
-    .tile1 h1.cf:before,
-    .tile1 h1.cf:after {
-        content: " ";
-        display: table;
-    }
-
-    .tile1 h1.cf:after {
-        clear: both;
-    }
 
 
     .tile2 .app-row {
