@@ -33,7 +33,7 @@ h2 {
   font-style: normal;
   font-weight: normal;
   line-height: 43px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
 }
 
 h3 {
@@ -88,7 +88,7 @@ a.action:hover {
   font-size: 28px;
   font-style: italic;
   color: #F7BF0F;
-  text-decoration: none;
+  padding-right: 10px;
 }
 
 .next-tile-button:hover {
