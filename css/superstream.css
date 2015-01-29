@@ -95,6 +95,7 @@ a.action:hover {
 .next-tile-button.action {
   font-size: 25px;
   background: transparent;
+  padding-left: 0;
 }
 
 img.scale {
@@ -102,11 +103,15 @@ img.scale {
 }
 
 #back-button {
-  line-height: 1em;
+  /*line-height: 1em;*/
 }
 
 #back-button a {
   position: absolute; top:0; right: 0;
+}
+
+.livestream-cta .glyphicon {
+  top: 3px;
 }
 
 
@@ -204,26 +209,24 @@ a.action.angled:after {
 .tile1 h2 {
   margin-top: 48px;
   margin-bottom: 80px;
-  font-size: 32px;
+  font-size: 40px;
 }
 
-.tile1 .sunday {
-  font-size: 112px;
-  margin-left: 200px;
-}
 
 .tile1 .container-fluid {
   position: relative;
 }
 
 .countdown {
-  padding: 0px;
+  position: relative;
+  z-index: 10; /* Had to pop up Z to keep buttons clickable above devices image */
+  padding: 32px 0 0;
   min-height: 200px;
   text-align: right;
 }
 
 .countdown h3 {
-  font-size: 20px;
+  margin-bottom: 0;
 }
 
 .countdown #time-left {
@@ -305,7 +308,6 @@ a.action.angled:after {
 .tile3.top {
   padding-bottom: 60px;
   color: #eaeaea; /* NEED TO GET FROM PSD */
-
   background: #313030;
 }
 
@@ -377,6 +379,7 @@ a.action.angled:after {
 
 
 .tile3.bottom {
+
   background: #0089d1;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAxNjFiNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDg5ZDEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
   background: -moz-linear-gradient(top,  #0161b5 0%, #0089d1 100%);
@@ -386,19 +389,20 @@ a.action.angled:after {
   background: -ms-linear-gradient(top,  #0161b5 0%,#0089d1 100%);
   background: linear-gradient(to bottom,  #0161b5 0%,#0089d1 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0161b5', endColorstr='#0089d1',GradientType=0 );
+
 }
 
 .tile3.bottom h3 {
   text-align: center;
   color: #FFF;
-  margin-top: 36px;
-  margin-bottom: 16px;
+  padding-top: 56px;
+  padding-bottom: 0px;
   font-size: 24px;
 }
 
 .tile3 .logos {
-  margin-top: 32px;
-  margin-bottom: 64px;
+  padding-top: 32px;
+  padding-bottom: 96px;
 }
 
 .tile3 .logos img {
