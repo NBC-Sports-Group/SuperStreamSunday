@@ -291,27 +291,32 @@ a.action.angled:after {
 .countdown .social a {
   float: left;
   display: inline-block;
-  margin-left: 4px;
-  width: 48px;
-  height: 48px;
+  margin: 8px 15px 0 15px;
+  width: 31px;
+  height: 31px;
   background: transparent no-repeat top center;
+  background-size: 100% 100%;
+  opacity: .6;
 }
 
 .countdown .social a:hover {
-  background-position: bottom center;
+  opacity: 1;
 }
 
 .countdown .social .facebook {
-  background-image: url('../img/icon_fb.png');
+  width: 17px; height: 32px;
+  background-image: url('../img/social-facebook.png');
 }
 
 .countdown .social .twitter {
-  margin-left: 2px;
-  background-image: url('../img/icon_tw.png');
+  width:31px; height: 25px;
+  margin-top: 12px;
+  background-image: url('../img/social-twitter.png');
 }
 
 .countdown .social .google {
-  background-image: url('../img/icon_gp.png');
+  margin-right: 0;
+  background-image: url('../img/social-google.png');
 }
 
 #devices { position: relative; }
