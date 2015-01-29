@@ -132,6 +132,10 @@ img.scale {
   position: absolute; top:0; right: 0;
 }
 
+.action.livestream-cta {
+  font-size: 22px;
+}
+
 .livestream-cta .glyphicon {
   top: 3px;
 }
@@ -150,6 +154,10 @@ img.scale {
 .app-store-group .stores a {
   margin-bottom: 5px;
   display: inline-block;
+}
+
+.app-store-group .desc {
+  margin-top: 8px;
 }
 
 /*----------*/
@@ -295,6 +303,7 @@ a.action.angled:after {
 }
 
 .countdown .social .twitter {
+  margin-left: 2px;
   background-image: url('../img/icon_tw.png');
 }
 
@@ -363,7 +372,7 @@ a.action.angled:after {
 
 .tile3 .note {
   color: #9f9f9f;
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 20px;
 }
 
@@ -398,7 +407,6 @@ a.action.angled:after {
   position: relative;
   box-sizing: border-box;
   min-height: 40px;
-  font-weight: bold;
   font-size: 16px;
 }
 
@@ -434,7 +442,7 @@ a.action.angled:after {
   color: #FFF;
   padding-top: 56px;
   padding-bottom: 0px;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .tile3 .logos {
@@ -459,7 +467,7 @@ a.action.angled:after {
 }
 
 .tile3 .next-tile-button {
-  font-size: 20px;
+  font-size: 24px;
   position: absolute; left: 15px; bottom: 0;
 }
 
