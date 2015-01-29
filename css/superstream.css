@@ -216,7 +216,7 @@ a.action.angled:after {
 }
 
 .countdown {
-  position: absolute;
+  position: relative;
   z-index: 10; /* Had to pop up Z to keep buttons clickable above devices image */
   padding: 32px 0 0;
   min-height: 200px;
@@ -384,7 +384,7 @@ a.action.angled:after {
 
 
 .tile3.bottom {
-  background: #c9234a;
+  background: #0000ff;
 }
 
 .tile3.bottom h3 {
