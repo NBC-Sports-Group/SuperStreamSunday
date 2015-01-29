@@ -290,7 +290,7 @@ a.action.angled:after {
   color: #c1c2c3;
 }
 
-.countdown .social a {
+.countdown .social button {
   float: left;
   display: inline-block;
   margin: 8px 15px 0 15px;
@@ -301,7 +301,7 @@ a.action.angled:after {
   opacity: .6;
 }
 
-.countdown .social a:hover {
+.countdown .social button:hover {
   opacity: 1;
 }
 
@@ -318,11 +318,12 @@ a.action.angled:after {
 
 .countdown .social .google {
   margin-right: 0;
+  margin-top: 10px;
   background-image: url('../img/social-google.png');
 }
 
 .countdown .social button.facebook {
- 
+
   width: 17px; height: 32px;
 }
 
@@ -338,7 +339,7 @@ a.action.angled:after {
 }
 
 .social button.share {
-  border: 0; 
+  border: 0;
   background-color: transparent;
   background-size: 100% 100%;
 }
