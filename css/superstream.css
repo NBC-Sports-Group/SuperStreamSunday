@@ -82,7 +82,8 @@ a.action:hover {
   margin-left: 5px;
 }
 
-.next-tile-button {
+.next-tile-button,
+a.next-tile-button:visited {
   font-size: 28px;
   font-style: italic;
   color: #F7BF0F;
@@ -515,9 +516,6 @@ footer a:hover {
     width: 50%;
   }
 
-  .tile3 .logos img {
-  }
-
   .tile3 .half-logo-offset {
     clear: none;
     margin-left: auto;
@@ -584,6 +582,11 @@ footer a:hover {
 
     .tile3 .next-tile-button {
       position: relative; left: 0; bottom: auto;
+    }
+
+    .tile3 .logos {
+      padding-bottom:  20px;
+      -webkit-column-count: 3;
     }
 
     .tile3 h1 { margin-bottom: 0; }
