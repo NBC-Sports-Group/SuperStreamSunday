@@ -87,6 +87,7 @@ a.next-tile-button:visited {
   font-size: 28px;
   font-style: italic;
   color: #F7BF0F;
+  padding-right: 10px;
 }
 
 .next-tile-button:hover {
