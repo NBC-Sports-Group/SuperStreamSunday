@@ -531,7 +531,10 @@ footer a:hover {
 
 @media screen and (max-width: 768px) {
   body { color: orange; }
-  /*.container-fluid { overflow-x: hidden; }*/
+  .container-fluid { 
+    overflow-x: hidden;
+    overflow: hidden;
+  }
   #back-button {
     overflow: initial !important;
   }
