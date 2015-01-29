@@ -355,7 +355,6 @@ a.action.angled:after {
 
 .tile3.bottom {
   background: #c9234a;
-  height: 320px;
 }
 
 .tile3.bottom h3 {
@@ -414,6 +413,12 @@ footer {
       display: block;
     }
 
+    .countdown {
+      text-align: left;
+    }
+
+    .countdown .social { float: none; }
+
     .tile2,
     .tile3 {
       padding-bottom: 20px;
@@ -446,6 +451,21 @@ footer {
       position: relative; top: auto; left: auto;
       width: 100%;
     }
+
+    .tile3 .logos img {
+    }
+
+    .tile3 .half-logo-offset {
+      clear: none;
+      margin-left: auto;
+    }
+
+    .logo-row-spacer {
+      clear: none;
+      height: auto;
+    }
+
+    footer .col-sm-3 { margin: 0 !important; }
 
     /* BOOTSTRAP OVERRIDE */
 
