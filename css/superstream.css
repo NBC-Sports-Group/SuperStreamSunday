@@ -298,7 +298,7 @@ a.action.angled:after {
 
 /* Tile 3
 ---------------------------------- */
-.tile3 {
+.tile3.top {
   padding-bottom: 60px;
   color: #C5c5C5; /* NEED TO GET FROM PSD */
 
@@ -382,7 +382,6 @@ a.action.angled:after {
 
 .tile3.bottom {
   background: #c9234a;
-  height: 320px;
 }
 
 .tile3.bottom h3 {
@@ -392,6 +391,7 @@ a.action.angled:after {
 
 .tile3 .logos {
   margin-top: 32px;
+  margin-bottom: 30px;
 }
 
 .tile3 .logos img {
@@ -451,6 +451,12 @@ footer a:hover {
       display: block;
     }
 
+    .countdown {
+      text-align: left;
+    }
+
+    .countdown .social { float: none; }
+
     .tile2,
     .tile3 {
       padding-bottom: 20px;
@@ -483,6 +489,21 @@ footer a:hover {
       position: relative; top: auto; left: auto;
       width: 100%;
     }
+
+    .tile3 .logos img {
+    }
+
+    .tile3 .half-logo-offset {
+      clear: none;
+      margin-left: auto;
+    }
+
+    .logo-row-spacer {
+      clear: none;
+      height: auto;
+    }
+
+    footer .col-sm-3 { margin: 0 !important; }
 
     /* BOOTSTRAP OVERRIDE */
 
