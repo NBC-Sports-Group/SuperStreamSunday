@@ -592,6 +592,8 @@ footer a:hover {
 
     .countdown {
       text-align: left;
+      max-width: 240px;
+      margin: 0px auto;
     }
 
     .countdown .social { float: none; }
