@@ -57,7 +57,7 @@ a:hover {
 .action {
   font-style: italic;
   background: #C92349;
-  color: #FFF;
+  color: #eaeaea;
 }
 
 
@@ -74,8 +74,16 @@ a.action:hover {
   color: #F7BF0F;
 }
 
+.icon-right {
+  display: inline-block;
+  background: url('../img/arrow-right.png') 0 0;
+  background-size: 100% 100%;
+  width: 11px; height: 18px;
+  margin-left: 5px;
+}
+
 .next-tile-button {
-  font-size: 25px;
+  font-size: 28px;
   font-style: italic;
   color: #F7BF0F;
 }
@@ -96,6 +104,20 @@ a.action:hover {
   font-size: 25px;
   background: transparent;
   padding-left: 0;
+}
+
+.next-tile-button .icon-down {
+  display: inline-block;
+  background: url('../img/arrow-down.png') 0 0;
+  background-size: 100% 100%;
+  width: 34px; height: 21px;
+  margin-right: 5px;
+}
+
+.next-tile-button .icon-right {
+  background-image: url('../img/arrow-right-2.png');
+  margin-left: 9px;
+  position: relative; top: 2px;
 }
 
 img.scale {
