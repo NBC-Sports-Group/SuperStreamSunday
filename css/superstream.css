@@ -136,8 +136,10 @@ img.scale {
   font-size: 22px;
 }
 
-.livestream-cta .glyphicon {
-  top: 3px;
+.livestream-cta .icon-right {
+  position: relative;
+  top: 1px;
+  left: 2px;
 }
 
 
