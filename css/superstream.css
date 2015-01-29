@@ -231,7 +231,7 @@ a.action.angled:after {
 }
 
 .countdown #time-left {
-  font-size: 48px;
+  font-size: 46px;
   letter-spacing: -1px;
   font-family: 'AvenirNextLTW02-HeavyCn_724425', Helvetica, Arial, sans-serif;
 }
@@ -242,6 +242,7 @@ a.action.angled:after {
 
 .countdown .social {
   float: right;
+  margin-top: -4px;
 }
 
 .countdown .social h3 {
@@ -250,20 +251,33 @@ a.action.angled:after {
   float: left;
   font-size: 16px;
   max-width: 80px;
-  margin: 5px 0 0 0;
+  margin: 8px 0 0 0;
   color: #c1c2c3;
 }
 
-.countdown .social img {
+.countdown .social a {
   float: left;
-  margin-left: 12px;
-  width: 40px;
+  display: inline-block;
+  margin-left: 4px;
+  width: 48px;
   height: 48px;
+  background: transparent no-repeat top center;
 }
 
-.countdown .social .twitter img {
-  margin-left: 2px;
-  margin-right: 0px;
+.countdown .social a:hover {
+  background-position: bottom center;
+}
+
+.countdown .social .facebook {
+  background-image: url('../img/icon_fb.png');
+}
+
+.countdown .social .twitter {
+  background-image: url('../img/icon_tw.png');
+}
+
+.countdown .social .google {
+  background-image: url('../img/icon_gp.png');
 }
 
 #devices { position: relative; }
