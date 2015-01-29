@@ -513,8 +513,16 @@ footer a:hover {
 
   .tile1 .row1 .col-sm-8,
   .tile1 .row1 .col-sm-4 {
-    width: 50%;
+    /*width: 50%;*/
   }
+
+  .tile2 h1,
+  .tile3 h1 {
+    font-size: 100px;
+    line-height: 1em;
+  }
+
+  .tile2 h1 { margin-top: -18px; }
 
   .tile3 .half-logo-offset {
     clear: none;
