@@ -489,14 +489,44 @@ footer a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  .container-fluid { overflow-x: hidden; }
+  #back-button {
+    overflow: initial !important;
+  }
+
+  #back-button .action:after {
+    display: none;
+  }
+
+  .tile1 .row1 .col-sm-8,
+  .tile1 .row1 .col-sm-4 {
+    width: 50%;
+  }
+
+  .tile3 .logos img {
+    }
+
+    .tile3 .half-logo-offset {
+      clear: none;
+      margin-left: auto;
+    }
+
+    .logo-row-spacer {
+      clear: none;
+      height: auto;
+    }
+
+    footer .col-sm-3 { margin: 0 !important; }
+
+}
+
+/* Smaller than tablet */
+@media screen and (max-width: 767px) {
 
     h1 {
       line-height: 1em;
     }
     h2 { font-size: 24px; }
-    .mobile-br {
-      display: block;
-    }
 
     .countdown {
       text-align: left;
@@ -537,20 +567,7 @@ footer a:hover {
       width: 100%;
     }
 
-    .tile3 .logos img {
-    }
-
-    .tile3 .half-logo-offset {
-      clear: none;
-      margin-left: auto;
-    }
-
-    .logo-row-spacer {
-      clear: none;
-      height: auto;
-    }
-
-    footer .col-sm-3 { margin: 0 !important; }
+    
 
     /* BOOTSTRAP OVERRIDE */
 
@@ -558,12 +575,9 @@ footer a:hover {
       padding-left: 30px; padding-right: 30px;
     }
 
-
-}
-
-
-@media screen and (max-width: 680px) {
-
+    .mobile-br {
+      display: block;
+    }
 
     .tile2 .app-row {
       margin-top: 30px; margin-bottom: 30px;
@@ -576,6 +590,5 @@ footer a:hover {
     .app-store-group:last-of-type {
       margin-bottom: 0;
     }
-
 
 }
