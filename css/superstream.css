@@ -242,6 +242,7 @@ a.action.angled:after {
   margin-top: 48px;
   margin-bottom: 80px;
   font-size: 40px;
+  line-height: 46px;
 }
 
 
@@ -528,7 +529,7 @@ footer a:hover {
     height: auto;
   }
 
-  .tile3.bottom .col-sm-3, 
+  .tile3.bottom .col-sm-3,
   .tile3.bottom .col-sm-offset-2 { margin: 0 !important; }
 }
 
@@ -541,7 +542,7 @@ footer a:hover {
 
     h2 { font-size: 20px; line-height: 1em; }
     .tile1 h2 { font-size: 30px; margin: 20px 0;}
-    
+
     #back-button a {
       position: fixed;
       left: 0; z-index: 1000;
