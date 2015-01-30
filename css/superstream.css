@@ -17,7 +17,7 @@ body.superstream {
   font-family:'Avenir Next LT W02 Demi', Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h3, .next-tile-button, a.action, .action {
+h1, h2, h3, .next-tile-button, a.action, .action, .ie-message {
   text-transform: uppercase;
   font-family:'AvenirNextLTW02-BoldCn', Helvetica, Arial, sans-serif;
 }
@@ -125,6 +125,15 @@ a.action:hover {
   position: relative; top: 0px;
 }
 
+.ie-message {
+  width: 100%;
+  padding: 10px;
+  font-size: 24px;
+  background-color: #0089d1;
+  color: #fff;
+  display: block;
+}
+
 img.scale {
   width: 100%;
 }
@@ -152,6 +161,7 @@ img.scale {
 
 .app-store-group .app-icon {
   position: absolute; top: -60px; left: -60px;
+  pointer-events: none;
 }
 
 .app-store-group .stores a {
@@ -347,7 +357,7 @@ a.action.angled:after {
 
 }
 
-.tile2.bottom { background: #c9234a; }
+.tile2.bottom { background: #c9234a; filter: none; }
 
 .tile2 h1 {
   margin-top: -10px;
