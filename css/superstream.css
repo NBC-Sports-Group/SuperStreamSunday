@@ -552,7 +552,13 @@ footer a:hover {
     line-height: 80px;
   }
 
+  .tile3 .logos {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
   .tile3 .logos img {
+    float: none;
   }
 
   .tile3 .half-logo-offset {
@@ -650,8 +656,6 @@ footer a:hover {
       position: relative; top: auto; left: auto;
       width: 100%;
     }
-
-
 
     /* BOOTSTRAP OVERRIDE */
 
