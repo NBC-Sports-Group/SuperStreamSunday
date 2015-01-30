@@ -601,6 +601,8 @@ footer a:hover {
       text-align: left;
       max-width: 240px;
       margin: 0px auto;
+      padding-top: 0px;
+      min-height: 0;
     }
 
     .countdown .social { float: none; }
