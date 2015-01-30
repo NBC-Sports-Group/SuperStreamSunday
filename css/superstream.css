@@ -17,7 +17,7 @@ body.superstream {
   font-family:'Avenir Next LT W02 Demi', Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h3, .next-tile-button, a.action {
+h1, h2, h3, .next-tile-button, a.action, .action {
   text-transform: uppercase;
   font-family:'AvenirNextLTW02-BoldCn', Helvetica, Arial, sans-serif;
 }
@@ -71,7 +71,6 @@ a.action {
   text-transform: uppercase;
 }
 
-.,action
 a.action:hover {
   text-decoration: none;
   color: #F7BF0F;
@@ -586,7 +585,7 @@ footer a:hover {
     #back-button span {
       position: fixed;
       left: 0; right:0; z-index: 1000;
-      font-size: 14px;
+      font-size: 17px;
     }
 
     #back-button {
