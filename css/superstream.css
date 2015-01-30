@@ -567,8 +567,7 @@ footer a:hover {
   }
 
   .logo-row-spacer {
-    clear: none;
-    height: auto;
+    display: none;
   }
 
   .tile3.bottom .col-sm-3,
