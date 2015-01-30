@@ -135,11 +135,11 @@ img.scale {
   position: absolute; top:0; right: 0;
 }
 
-.action.livestream-cta {
+.action#livestream-cta {
   font-size: 22px;
 }
 
-.livestream-cta .icon-right {
+#livestream-cta .icon-right {
   position: relative;
   top: 1px;
   left: 2px;
@@ -271,7 +271,7 @@ a.action.angled:after {
   font-family: 'AvenirNextLTW02-HeavyCn_724425', Helvetica, Arial, sans-serif;
 }
 
-.countdown .countdown-expired {
+.countdown-expired {
   display: none;
 }
 
@@ -532,7 +532,7 @@ footer a:hover {
 
 @media screen and (max-width: 768px) {
   body { color: orange; }
-  .container-fluid { 
+  .container-fluid {
     overflow-x: hidden;
     overflow: hidden;
   }

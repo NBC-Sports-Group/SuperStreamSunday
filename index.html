@@ -45,7 +45,7 @@
   <div id="back-button" class="container-fluid">
     <div class="row">
       <div class="col-sm-12">
-        <a href="http://stream.nbcsports.com/liveextra/" title="Watch the Live Stream" class="action angled red livestream-cta">Watch the </span>live stream <i class='icon-right'></i></a>
+        <a href="http://stream.nbcsports.com/liveextra/" title="Watch the Live Stream" id="livestream-cta" class="action angled red">Watch the </span>live stream <i class='icon-right'></i></a>
       </div>
     </div>
   </div>
@@ -60,7 +60,7 @@
             <img src="img/sss_logo.png" class="scale" />
           </h1>
         </div>
-        <div class="col-sm-4">
+        <div id="countdown-container" class="col-sm-4">
           <div class="countdown">
             <h3>Preview Ends In</h3>
             <div id="time-left"><span id="countdown-text">&nbsp;</span></div>
@@ -274,7 +274,8 @@
 
     function hideCountdown() {
       clearInterval(countdownInterval);
-      document.getElementById('time-left').className = "countdown-expired";
+      document.getElementById('countdown-container').className = "countdown-expired";
+      document.getElementById('livestream-cta').className = "countdown-expired";
     }
 
     // Do a tick manually to update/refresh things
