@@ -148,6 +148,9 @@ img.scale {
   left: 3px;
 }
 
+#back-button.container-fluid,
+#back-button .row { height: 0; }
+
 .mobile-livestream-message {
   font-weight: bold;
   letter-spacing: 0;
