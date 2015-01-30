@@ -138,6 +138,11 @@ img.scale {
   left: 3px;
 }
 
+.mobile-livestream-message {
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
 .app-store-group {
   position: relative;
   padding-left: 120px;
