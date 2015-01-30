@@ -577,7 +577,7 @@ footer a:hover {
     }
 
     h2 { font-size: 20px; line-height: 1em; }
-    .tile1 h2 { font-size: 30px; margin: 20px 0;}
+    .tile1 h2 { font-size: 30px; margin: 20px 0; line-height: 1em; }
 
     #back-button a,
     #back-button span {
@@ -614,7 +614,7 @@ footer a:hover {
 
     .tile2 h1,
     .tile3 h1 {
-      font-size: 60px;
+      font-size: 50px;
       line-height: 1em;
     }
 
@@ -641,6 +641,7 @@ footer a:hover {
     #devices-mobile {
       min-height: none;
       position: relative;
+      margin-top: -30px;
     }
 
     #devices-mobile img {
@@ -673,5 +674,12 @@ footer a:hover {
     }
 
     footer .col-xs-offset-1 { margin-left: 0; }
+}
 
+@media screen and (max-width: 320px) {
+  .tile2 h1,
+  .tile3 h1 {
+    font-size: 40px;
+    line-height: 1em;
+  }
 }
